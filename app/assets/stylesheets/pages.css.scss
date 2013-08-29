@@ -1,0 +1,364 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET*/
+
+
+header {
+	width: 100%;
+}
+
+#top {
+		height: 150px;
+		background-color: #e2e7d5;
+		text-align: center;
+		position: relative;
+}
+
+header img {
+	padding-top: 25px;
+}
+
+h1 {
+	display:none;
+}
+
+nav {
+	min-height: 75px;
+	background-color: #3d3d3d;
+	position: relative;
+	margin: 0 auto;
+	-moz-box-shadow:    0px 3px 5px -3px #000;
+  	-webkit-box-shadow: 0px 3px 5px -3px #000;
+  	box-shadow:         0px 3px 5px -3px #000;
+	ul {
+		margin: 0 auto;
+		text-align: center;}
+	li {
+		display: inline;
+		list-style-type: none;
+		color: #fff;
+		font-size: 24px;
+		font-family: 'Montserrat', sans-serif, 700;}
+	li a {
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		color: inherit;
+		width: 15%;
+		min-width: 150px;
+		padding-top: 24px;
+		margin-right: 4%;
+		height: 41px;}
+	li a:hover.shop {
+		border-bottom: solid 10px #99bc75;}
+	li a:hover.explore {
+		border-bottom: solid 10px #ffd45d;}
+	li a:hover.blog {
+		border-bottom: solid 10px #6ba7da;}
+	li a:hover.forum {
+		border-bottom: solid 10px #d95b5b;}
+}
+
+@media all and (max-width: 720px) {
+	nav ul{
+		margin: 0 20%;
+	}
+}
+
+#hero {
+	height: 325px;
+	background: url("/assets/hero_barcade.png");
+	background-size: cover;
+	background-position: 5%;
+	position: relative;
+	-moz-box-shadow:    0px 3px 5px -3px #000;
+  	-webkit-box-shadow: 0px 3px 5px -3px #000;
+  	box-shadow:         0px 3px 5px -3px #000;
+}
+
+
+#description {
+	height: 325px;
+	width: 320px;
+	margin-left: 60%;
+	background-color: #fff;
+	opacity: .9;
+	position: absolute;
+	font-family: 'verb_extralightitalic';
+}
+
+#description h3 {
+	font-size: 225%;
+	text-align: right;
+	font-family: 'Oleo Script', cursive;
+	margin: 10% 14% 0 0;
+	letter-spacing: 1.1;
+	}
+
+#description p {
+	margin: 40px;
+	padding: 15px;
+	background-color: #ffd45d;
+	color: #3d3d3d;
+	font-size: 180%;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+@media all and (max-width: 720px) {
+	#description{
+		width: 40%;
+		min-width: 320px;
+		height: 325px;
+		margin-left: 10%;
+	}
+}
+
+#bottom {
+	width: 100%;
+	min-height: 60px;
+	position: relative;
+	background-color: #ededed;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif, 400;
+	color:  #3d3d3d;
+	z-index: -1;
+	ul {
+		margin-left: 80%;}
+	li {
+		padding: 12px 10px 0 0 ;
+		display: inline-block;
+		list-style-type: none;}
+}
+
+@media all and (max-width: 720px) {
+	#bottom ul{
+		margin-left: 35%;
+	}
+}
+
+section {
+	position: relative;
+	min-height: 350px;
+	p {
+	font-family: 'verb_extralightregular';
+	font-size: 24px;
+	color: #6d6d6d;
+	line-height: 1.8;}
+	a.button_blue {
+		margin: 60px 34.375%;
+		display: inline-block;
+		height: 60px;
+		width: 31.25%;
+		background-color: #6ba7da;
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 60px;
+		vertical-align: middle;
+		opacity: .9;
+	}
+	a:hover.button_blue {
+		opacity: 1;}
+}
+
+@media all and (max-width: 720px) {
+	section p{
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 720px) {
+	section a.button_blue{
+		width: 90%;
+		margin: 60px 5%;
+	}
+}
+
+section.blog p{
+		margin: 0 10%;
+	}
+
+section h2 {
+	display: block;
+	margin: 50px auto;
+	padding-bottom: 30px;
+	width: 80%;
+	font-size: 250%;
+	color: #3d3d3d;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif, 700;
+	text-align: center;
+	border-bottom: 1px solid #ededed;
+}
+
+.threecol {
+	position: relative;
+	display:inline-block;
+	float: left;
+	margin-bottom: 50px;
+	width: 33.33%;
+	min-width: 300px;
+	text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+	section{
+		float:none;
+		margin: 0 auto;}
+}
+
+@media all and (max-width: 720px) {
+	.threecol{
+		width:100%;
+		margin: 30px 0;
+	}
+	.threecol img {
+		width: 75%;
+		max-width: 320px;
+	}
+}
+
+.threecol p {
+	margin-top: 10px;
+}
+
+.threecol a {
+	color: #6d6d6d;
+	font-size: 20px;
+	text-decoration: none;
+	opacity: .90;
+}
+
+.threecol a:hover {
+		opacity: 1;
+}
+
+#sponsor {
+	margin: 50px 0;
+	clear: left;
+	height: 60px;
+	background-color: #ededed;
+	position: relative;
+	line-height: 60px;
+	vertical-align: middle;
+	p {
+		margin: 0 13.5%;
+		font-family: 'verb_extralightitalic';
+		color: #3d3d3d;
+	}
+}
+
+footer {
+	background-color: #3d3d3d;
+	padding: 0 10%;
+	min-height:150px;
+	position: relative;
+	line-height: 150px;
+	vertical-align: middle;
+	color: #fff;
+	ul {
+		margin-left: 5%;
+		display: inline-block;
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+		font-family: 'Montserrat';
+		font-weight: 400;
+		margin-left: 10px;
+	}
+	li a {
+		color: inherit;
+		padding: 0 20%;
+		text-decoration: none;
+	}
+	img {
+		vertical-align: middle;
+	}
+}
+
+@media all and (max-width: 720px) {
+	footer {
+		line-height: 150%;
+		padding: 50px;
+		text-align: center;
+		font-size: 24px;
+	}
+}
+
+@media all and (max-width: 720px) {
+	footer img{
+		display: block;
+		margin-top: 0;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 720px) {
+	footer li{
+		display: block;
+		width: 100%;
+		margin: 20px auto;
+		text-align: center;
+	}
+}
+
+	

@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 gem 'jquery-rails'
+gem 'bloggy'
 
 group :production do
 	gem 'pg'

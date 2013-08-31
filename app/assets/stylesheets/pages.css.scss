@@ -56,13 +56,17 @@ header {
 
 #top {
 		height: 150px;
-		background-color: #e2e7d5;
+		background-color: #3d3d3d;
 		text-align: center;
 		position: relative;
 }
+/* #e2e7d5 */
+
 
 header img {
-	padding-top: 25px;
+	padding-top: 10px;
+	width: 10%;
+	min-width: 120px;
 }
 
 h1 {
@@ -168,7 +172,7 @@ nav {
 	width: 100%;
 	min-height: 60px;
 	position: relative;
-	background-color: #ededed;
+	background-color: #e2e7d5;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif, 400;
 	color:  #3d3d3d;
@@ -256,6 +260,10 @@ section h2 {
 	text-align: center;
 }
 
+.threecol img {
+	max-width: 320px;
+}
+
 @media screen and (max-width: 720px) {
 	section{
 		float:none;
@@ -292,7 +300,7 @@ section h2 {
 	margin: 50px 0;
 	clear: left;
 	height: 60px;
-	background-color: #ededed;
+	background-color: #e2e7d5;
 	position: relative;
 	line-height: 60px;
 	vertical-align: middle;
@@ -334,10 +342,10 @@ footer {
 
 @media all and (max-width: 720px) {
 	footer {
-		line-height: 150%;
-		padding: 50px;
-		text-align: center;
+		padding: 50px 0px 50px 0px;
+		line-height: 200%;
 		font-size: 24px;
+		text-align: center;
 	}
 }
 
@@ -348,7 +356,13 @@ footer {
 		margin-bottom: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
+	}
+}
+
+@media all and (max-width: 720px) {
+	footer ul{
+		margin-left: 0;
+		width: 100%;
 	}
 }
 
@@ -356,9 +370,16 @@ footer {
 	footer li{
 		display: block;
 		width: 100%;
-		margin: 20px auto;
-		text-align: center;
+		padding: 0px 0px;
+		margin-left: 0;
 	}
 }
+
+@media all and (max-width: 720px) {
+	footer li a{
+		padding: 0;
+	}
+}
+
 
 	
